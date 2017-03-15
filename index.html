@@ -11,15 +11,15 @@
      </style>
    </head>
  <body>
-    <div class="container" ng-controller="LunchCheckController">
+    <div class="container" ng-controller="LunchCheckController" >
      <h1>Lunch Checker</h1>
 
-          <div class="form-group" >
+          <div class="form-group"  >
               <input id="lunch-menu" type="text"
-              placeholder="List comma separated dishes you usually have for lunch"
-              class="form-control"  ng-model="inputval" ng-trim="false">
+              placeholder= "List comma separated dishes you usually have for lunch"
+              class="form-control"  ng-model="inputval" >
                   </div>
-                  
+
               <div class="form-group">
 
                   <button class="btn btn-default" ng-click="check()">Check If Too Much</button>
@@ -27,8 +27,10 @@
               </div>
 
               <div class="form-group message">
+
               <h1 ng-show="matched">{{sayenjoy()}}</h1>
               <h1 ng-show="notmatched">{{saytoomuch()}}</h1>
+              <h1 ng-show="noelem">{{please()}}</h1>
               </div>
 
 
