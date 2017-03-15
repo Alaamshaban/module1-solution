@@ -34,7 +34,7 @@ function LunchCheckController($scope){
     return "Too much!"
   }
   $scope.please=function(){
-    return "please"
+    return "please enter data first"
   }
 }
 
