@@ -11,8 +11,8 @@ function LunchCheckController($scope){
    $scope.notmatched=false;
    $scope.matched=false;
    $scope.noelem=true;
-   console.log(array.length);
-    console.log($scope.inputval.length);
+  // console.log(array.length);
+    //console.log($scope.inputval.length);
  }
   else if(array.length>0 && array.length<=3){
     $scope.matched=true;
@@ -34,7 +34,7 @@ function LunchCheckController($scope){
     return "Too much!"
   }
   $scope.please=function(){
-    return "please enter data first"
+    return "Please enter data first"
   }
 }
 
